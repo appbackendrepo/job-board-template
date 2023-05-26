@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+
+input,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+span,
+a,
+small,
+tr,
+td,
+th,
+li {
+    font-family: 'DM Sans', sans-serif;
+}
+body {
+    background-color: #fafafa;
+}
+.main-container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.posts .card {
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    padding: 15px;
+    background: #fff;
+    border-radius: 8px;
+    border: 1px solid #eaeaea;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.04);
+    transition: box-shadow 0.15s ease;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+.posts .card .post-meta {
+    display: flex;
+    grid-gap: 20px;
+    align-items: center;
+}
+
+.posts .card .post-meta .card-image {
+    align-items: center;
+    background-color: #fafafa;
+    border-radius: 8px;
+    display: flex;
+    height: 70px;
+    justify-content: center;
+    width: 70px;
+}
+
+.posts .card .post-meta .card-image img {
+    mix-blend-mode: darken;
+    width: 50px;
+    height: 50px;
+}
+
+.search-input {
+    padding: 20px 0px;
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+}
+.powered-by {
+    display: flex;
+    align-items: center;
+    bottom: 0;
+    right: 0;
+    position: fixed;
+    grid-gap: 5px;
+    margin: 30px;
+    background-color: #000;
+    padding: 4px 10px;
+    border-radius: 5px;
+    z-index: 99;
+    color: #fff;
+    font-size: 13px;
+}
+.powered-by a {
+    text-decoration: auto !important;
+}
+
+.powered-by svg {
+    font-size: 13px;
+    color: #fff;
+}
+.job-post {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 15px;
+    background: #fff;
+    border-radius: 8px;
+    border: 1px solid #eaeaea;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.04);
+}
+.job-post .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.job-post .header .post-meta {
+    display: flex;
+    grid-gap: 20px;
+    align-items: center;
+}
+.job-post .header .post-meta .card-image {
+    align-items: center;
+    background-color: #fafafa;
+    border-radius: 8px;
+    display: flex;
+    height: 70px;
+    justify-content: center;
+    width: 70px;
+}
+
+.job-post .header .post-meta .card-image img {
+    mix-blend-mode: darken;
+    width: 50px;
+    height: 50px;
+}
