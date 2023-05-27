@@ -17,7 +17,7 @@ export default function Home() {
             stopper = false;
             try {
                 const res = await fetch(
-                    `https://api.tablebackend.com/v1/rows/wzXPSQK0U3V8`,
+                    process.env.NEXT_PUBLIC_TABLE_BACKEND_API,
                     {
                         method: 'GET',
                         headers: {
@@ -50,7 +50,7 @@ export default function Home() {
         const newTimer = setTimeout(async () => {
             try {
                 const res = await fetch(
-                    `https://api.tablebackend.com/v1/rows/wzXPSQK0U3V8/search?q=${value}`,
+                    `${process.env.NEXT_PUBLIC_TABLE_BACKEND_API}/search?q=${value}`,
                     {
                         method: 'GET',
                         headers: {
@@ -65,7 +65,7 @@ export default function Home() {
                 console.error(error);
                 // handle error
             }
-        }, 1000);
+        }, 500);
 
         setTimer(newTimer);
     };
@@ -107,7 +107,7 @@ export default function Home() {
                                         />
                                     </div>
                                     <div>
-                                        <Text h4 my={0}>
+                                        <Text h5 my={0}>
                                             {post.position}
                                         </Text>
                                         <Text small my={0}>
